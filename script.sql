@@ -1,3 +1,9 @@
+ALTER TABLE pacientes
+add column sn_paciente_ativo BOOLEAN default TRUE;
+
+ALTER TABLE medicos
+add column sn_medico_ativo BOOLEAN default TRUE;
+
 -- Para a tabela 'pacientes'
 ALTER TABLE pacientes
 ADD COLUMN ds_senha VARCHAR(100) NOT NULL;

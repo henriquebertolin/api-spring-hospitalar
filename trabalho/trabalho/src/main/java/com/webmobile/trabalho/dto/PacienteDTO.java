@@ -30,8 +30,8 @@ import lombok.Setter;
 public class PacienteDTO {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "cd_usuario")
-	private Long cdUsuario;
+	@Column(name = "cd_paciente")
+	private Long cdPaciente;
 	
 	@Column(name = "nm_paciente")
 	private String nmPaciente;
@@ -54,5 +54,8 @@ public class PacienteDTO {
 	
 	@Column(name = "dt_hora_alterado")
 	private LocalDateTime dtHoraAlterado;
+	
+	@Column(name = "sn_paciente_ativo")
+	private Boolean snPacienteAtivo;
 	
 }
